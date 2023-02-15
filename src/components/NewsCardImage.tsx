@@ -27,12 +27,13 @@ export default function NewsCardImage(props: INewsCardImageProps) {
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(1);
 
-  const changeImage = () => {
-    const randomNumber = Math.floor(Math.random() * images.length);
-    setCurrentImageIndex(randomNumber);
-  };
-
-  useEffect(() => changeImage(), [changeImage]);
+  useEffect(() => {
+    const changeImage = () => {
+      const randomNumber = Math.floor(Math.random() * images.length);
+      setCurrentImageIndex(randomNumber);
+    };
+    changeImage();
+  }, []);
 
   return (
     <div>
