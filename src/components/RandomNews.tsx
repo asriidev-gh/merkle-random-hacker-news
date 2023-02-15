@@ -27,7 +27,9 @@ const RandomNews = () => {
           </div>
           <div className="footer">
             <span>Developed by: Andy R.</span>
-            <a href="#">Github Link</a>
+            <a href="https://github.com/asriidev-gh/merkle-random-hacker-news">
+              Github Link
+            </a>
           </div>
         </>
       )}
