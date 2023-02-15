@@ -33,7 +33,7 @@ export default function NewsCardImage(props: INewsCardImageProps) {
       setCurrentImageIndex(randomNumber);
     };
     changeImage();
-  }, []);
+  }, [images.length]);
 
   return (
     <div>
